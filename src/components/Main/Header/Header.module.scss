@@ -1,0 +1,17 @@
+@import "../../../_@mixins/@mixin.scss";
+.header {
+  @include background;
+  border-radius: 0px 0px 50px 50px;
+  opacity: 1;
+  height: 80px;
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19px 34px;
+  > h1 {
+    @include fonts(35px, 900, Montserrat);
+  }
+}

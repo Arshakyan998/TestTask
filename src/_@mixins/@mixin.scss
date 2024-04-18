@@ -1,0 +1,7 @@
+@mixin background($color: var(--white)) {
+  background: $color 0% 0% no-repeat padding-box;
+}
+
+@mixin fonts($size: 19px, $fontType: normal, $font: Test Söhne) {
+  font: normal normal $fontType $size $font;
+}

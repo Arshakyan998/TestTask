@@ -1,0 +1,48 @@
+@import "../../_@mixins/@mixin.scss";
+.button {
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px var(--black);
+
+  &_outlet {
+    @include background;
+    border: 2px solid #6600ff;
+    border-radius: 50px;
+    opacity: 1;
+    color: #6600ff;
+    width: 98px;
+    height: 36px;
+    @include fonts(19px);
+    letter-spacing: 0px;
+  }
+
+  &_default {
+    @include background;
+    width: 184px;
+    height: 55px;
+    @include fonts(30px);
+    opacity: 1;
+  }
+
+  &_success {
+    @include background(#00cc99);
+
+    @include fonts(27px);
+    color: var(--white);
+  }
+
+  &_bolder {
+    font-weight: bolder;
+  }
+
+  &_bold {
+    font-weight: bold;
+  }
+
+  &_normal {
+    font-weight: 500;
+  }
+}

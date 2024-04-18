@@ -1,0 +1,24 @@
+@import "../../../_@mixins/@mixin.scss";
+
+$black: rgba(8, 7, 8, 1);
+
+.footer {
+  height: 153px;
+  margin-top: 43px;
+  @include background(rgba(252, 239, 249, 1));
+  border-radius: 50px 50px 0px 0px;
+  padding: 41px 37px;
+  &__content {
+    width: 256px;
+    > h2 {
+      @include fonts(15px, normal, montserrat);
+      color: $black;
+    }
+    > span {
+      @include fonts(20px, 20px, montserrat);
+
+      color: $black;
+      margin-top: 20px;
+    }
+  }
+}
